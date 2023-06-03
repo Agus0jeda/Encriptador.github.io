@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: radial-gradient( rgb(135, 92, 222), rgb(35, 20, 65),black);
+
+}
+
+/* ************ */
+/*    HEADER     */
+
+.contenedor-header{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 80px;
+}
+
+img{
+    margin: 0px 8px;
+   padding: 5px;
+}
+
+.circulo-logo{
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+    background: #0e0d0d;
+    box-shadow: #0d0c0c 3px 3px 5px;
+    border-radius: 50%;
+}
+
+.titulo{
+    margin: 30px 10px;
+    font-size: 20px;
+    color: #ffffff;
+    text-shadow: #101010 5px 4px 5px;
+}
+
+/* ************ */
+/*    MAIN     */
+
+
+.contenedor-main{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    height: 820px;
+}
+
+.contenedor-section{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.area-texto textarea{
+    margin: 10px;
+    width: 50vw;
+    height: 500px;
+    border: none;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150%;
+
+    background: #ecf7c4;
+}
+
+.area-texto textarea:focus,
+.area-texto textarea:active{
+    outline: none;
+    border: none;
+    
+}
+
+.terminos p{
+    padding: 10px;
+    color: #fbf8fa;
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+.botones{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: yellowgreen;
+    height: 100px; 
+}
+
+.btn-1{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px;   
+    border: none;
+    border-radius: 15px;
+    color: #ffffff;
+    background: #0d0c0c;
+ }
+
+.btn-2{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 20px;   
+    border: none;
+    border-radius: 15px;
+    color: #ffffff;
+    background: #0d0c0c;
+ }
+
+ .btn-2:active{
+    background: #c49ff4a1;
+    box-shadow: #b68fe8 3px 5px 5px;
+ }
+ .btn-1:hover{
+    background: #cccccc;
+ }
+
+/*  */
+
+
+
+.botones-extras{
+    background: yellow;
+    margin: 20px;
+    width: 100px;
+    height: 500px;
+    display:flex;
+    flex-direction: column-reverse;
+}
+
+.btn-borrar {
+    background: rgba(135, 92, 222, 0);
+    margin: 20px 0;
+  
+    border: none;
+
+ }
+
+ .btn-borrar img{
+    width: 56px;
+    height: 54px;
+    
+ }
+
+ .btn-borrar img:active{
+    background: #c49ff4a1;
+    box-shadow: #b68fe8 3px 5px 5px;
+    border-radius: 20%;
+    width: 40px;
+    height: 40px;
+ }
+
+
+ .btn-copiar {
+    margin: 20px 0;
+    background: rgba(135, 92, 222, 0);
+    border: none;
+ }
+
+ .btn-copiar img{
+    width: 56px;
+    height: 54px;
+    
+ }
+
+ .btn-copiar img:active{
+    box-shadow: #b68fe8 3px 5px 5px;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+ }
+
+
+  /* ************ */
+/*    FOOTER     */
+
+ footer{
+    width: 100vw;
+    height: 79px;
+    background: red;
+    
+}
