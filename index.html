@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
     <header>
@@ -30,14 +31,15 @@
      <main class="contenedor-main">
 
         <aside class="botones-extras">
-            <button class="btn-borrar"><img src="img/btn-borrar.png" alt="" ></button>
-            <button class="btn-copiar"><img src="img/btn-copiar.png" alt="" ></button>
+            <button id ="btn-borrar" class="btn-borrar"><img src="img/btn-borrar.png" alt="" ></button>
+            <button id="btn-copiar" class="btn-copiar"><img src="img/btn-copiar.png" alt="" ></button>
         </aside>
 
         <section class="contenedor-section">
 
             <div class="area-texto">
                 <textarea name="texto" id="texto"  placeholder="Ingrese el texto aquí"></textarea>
+                <textarea name="textoFinal" id="textoFinal"></textarea>
             </div>
 
             <div class="terminos">
@@ -46,8 +48,8 @@
 
             
             <div class="botones">
-                <input class="btn-1" type="button" value="Encriptar">
-                <input class="btn-2" type="button" value="Desencriptar">
+                <input id="btn-encriptar" class="btn-1" type="button" value="Encriptar">
+                <input id="btn-desencriptar" class="btn-2" type="button" value="Desencriptar">
             </div>
             
 
@@ -62,5 +64,7 @@
 
     </footer> 
  
+    <script src="main.js"></script>
+
 </body>
 </html>

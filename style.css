@@ -4,7 +4,7 @@
 }
 body{
     background: radial-gradient( rgb(135, 92, 222), rgb(35, 20, 65),black);
-
+    font-family: "Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 
 /* ************ */
@@ -64,8 +64,8 @@ img{
     font-weight: 400;
     font-size: 25px;
     line-height: 150%;
-
-    background: #ecf7c4;
+    resize: none;
+    background: #ecf7c4f5;
 }
 
 .area-texto textarea:focus,
@@ -73,6 +73,10 @@ img{
     outline: none;
     border: none;
     
+}
+
+#textoFinal{
+    display: none;
 }
 
 .terminos p{
@@ -87,7 +91,7 @@ img{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: yellowgreen;
+    /* background: yellowgreen; */
     height: 100px; 
 }
 
@@ -111,20 +115,22 @@ img{
     background: #0d0c0c;
  }
 
- .btn-2:active{
+.btn-2:active ,
+.btn-1:active{
     background: #c49ff4a1;
     box-shadow: #b68fe8 3px 5px 5px;
  }
- .btn-1:hover{
+ .btn-1:hover ,
+.btn-2:hover{
     background: #cccccc;
+    color: #0d0c0c;
  }
-
 /*  */
 
 
 
 .botones-extras{
-    background: yellow;
+    /* background: yellow; */
     margin: 20px;
     width: 100px;
     height: 500px;
