@@ -3,8 +3,29 @@
     margin: 0;
 }
 body{
-    background: radial-gradient( rgb(135, 92, 222), rgb(35, 20, 65),black);
+
+    /* position: relative; */
     font-family: "Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+
+.video-background{
+    position: fixed;
+    z-index: -99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+}
+
+.video{
+    position: absolute;
+    z-index: -99;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    opacity: .8;
 }
 
 /* ************ */
@@ -35,7 +56,7 @@ img{
     margin: 30px 10px;
     font-size: 20px;
     color: #ffffff;
-    text-shadow: #101010 5px 4px 5px;
+    text-shadow: #7309fc 5px 4px 5px;
 }
 
 /* ************ */
@@ -64,8 +85,10 @@ img{
     font-weight: 400;
     font-size: 25px;
     line-height: 150%;
+    padding: 5px;
     resize: none;
-    background: #ecf7c4f5;
+    background: #00000075;
+    color: #ffffff
 }
 
 .area-texto textarea:focus,
@@ -81,9 +104,11 @@ img{
 
 .terminos p{
     padding: 10px;
-    color: #fbf8fa;
+    color: #ffffff;
     font-size: 20px;
-    opacity: 0.5;
+    font-weight: 600;
+    opacity: 0.8;
+    
 }
 
 .botones{
@@ -103,6 +128,7 @@ img{
     border-radius: 15px;
     color: #ffffff;
     background: #0d0c0c;
+    cursor: pointer;
  }
 
 .btn-2{
@@ -113,6 +139,7 @@ img{
     border-radius: 15px;
     color: #ffffff;
     background: #0d0c0c;
+    cursor: pointer;
  }
 
 .btn-2:active ,
@@ -122,7 +149,7 @@ img{
  }
  .btn-1:hover ,
 .btn-2:hover{
-    background: #cccccc;
+    background: #7309fc;
     color: #0d0c0c;
  }
 /*  */
@@ -141,9 +168,8 @@ img{
 .btn-borrar {
     background: rgba(135, 92, 222, 0);
     margin: 20px 0;
-  
     border: none;
-
+    cursor: pointer;
  }
 
  .btn-borrar img{
@@ -165,6 +191,7 @@ img{
     margin: 20px 0;
     background: rgba(135, 92, 222, 0);
     border: none;
+    cursor: pointer;
  }
 
  .btn-copiar img{
@@ -180,6 +207,13 @@ img{
     height: 40px;
  }
 
+.btn-copiar:hover ,
+.btn-borrar:hover{
+
+    width: 100px;
+    height: 50px;
+    
+}
 
   /* ************ */
 /*    FOOTER     */
@@ -189,4 +223,206 @@ img{
     height: 79px;
     background: red;
     
+}
+
+
+/***** LAPTOP *****/
+
+@media (max-width:1440px){
+    
+
+    /****MAIN*****/
+    .contenedor-main{
+        height: 585px;
+    }
+    
+    .area-texto textarea{
+        height: 320px;
+    }
+
+    .botones{
+        margin-top: 3px;
+        height: 50px; 
+    }
+    
+    .btn-1{
+        font-size: 17px;
+        font-weight: 500;
+        padding: 15px;   
+     }
+    
+    .btn-2{
+        font-size: 17px;
+        font-weight: 500;
+        padding: 15px;
+     }
+
+     .botones-extras{
+        margin: 10px;
+        width: 80px;
+        height: 300px;
+    }
+    
+    .btn-borrar {
+        margin: 10px 0;
+     }
+    
+     .btn-borrar img{
+        width: 41px;
+        height: 39px;
+        
+     }
+    
+     .btn-borrar img:active{
+        width: 30px;
+        height: 30px;
+     }
+    
+    
+     .btn-copiar {
+        margin: 10px 0;
+     }
+    
+     .btn-copiar img{
+        width: 41px;
+        height: 39px;
+        
+     }
+
+     footer{
+        height: 50px;
+        background: rgba(255, 0, 0, 0.43);
+        
+    }
+}
+
+
+
+/***** TABLET *****/
+
+@media (max-width:768px){
+    .contenedor-header{
+        background: #b68fe8;
+    }
+    
+    .circulo-logo{
+        margin: 10px;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .titulo{
+        font-size: 15px;  
+    }
+
+    /****MAIN*****/
+    .contenedor-main{
+        margin-top: 15px;
+        height: 530px;
+    }
+    
+    .area-texto textarea{
+        height: 350px;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 100%;
+    }
+
+    .terminos p{
+        padding: 0 0 0 15px;
+        font-size: 17px;
+        font-weight: 500;
+
+    }
+
+    .botones{
+        margin-top: 3px;
+        height: 50px; 
+    }
+    
+    .btn-1{
+        font-size: 17px;
+        font-weight: 500;
+        padding: 15px;   
+     }
+    
+    .btn-2{
+        font-size: 17px;
+        font-weight: 500;
+        padding: 15px;
+     }
+
+     .botones-extras{
+        margin: 10px;
+        width: 80px;
+        height: 300px;
+    }
+    
+    .btn-borrar {
+        margin: 10px 0;
+     }
+    
+     .btn-borrar img{
+        width: 41px;
+        height: 39px;
+        
+     }
+    
+     .btn-borrar img:active{
+        width: 30px;
+        height: 30px;
+     }
+    
+    
+     .btn-copiar {
+        margin: 10px 0;
+     }
+    
+     .btn-copiar img{
+        width: 41px;
+        height: 39px;
+        
+     }
+
+     footer{
+        height: 50px;
+        background: rgba(255, 0, 0, 0.43);
+        
+    }
+}
+
+
+/***** MOVIL M *****/
+
+@media (max-width:450px){
+   
+    .titulo{ 
+        margin: auto;
+    }
+
+    /****MAIN*****/
+    .contenedor-main{
+        height: 510px;
+    }
+    
+    .area-texto textarea{
+        width: 60vw;
+    }
+
+    .btn-1{
+        font-size: 15px;
+        padding: 10px;   
+     }
+    
+    .btn-2{
+        font-size: 15px;
+        padding: 10px;
+     }
+
+     .botones-extras{
+        margin: 5px;
+        width: 70px;
+        height: 300px;
+    }
+ 
 }
