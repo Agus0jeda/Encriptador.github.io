@@ -217,14 +217,53 @@ img{
 
   /* ************ */
 /*    FOOTER     */
-
- footer{
+footer{
+    /* background: rgba(255, 0, 0, 0.397); */
     width: 100vw;
-    height: 79px;
-    background: red;
+    height: 90px;
+    display: flex;
+    justify-content: center;
     
 }
 
+.conteiner-footer{
+    height: 70px;
+    width: 400px;
+    display: inline-flex;
+    
+}
+
+.correo{
+    font-size: 20px;
+    width: 50vw;
+    font-weight: 500; 
+    padding: 5px;
+    color: #ffffff;
+    text-shadow: #6d09f0 3px 5px 5px;
+
+}
+
+.listas{
+    list-style-type: none;
+    display: inline-flex;
+}
+
+li img{
+    width: 40px;
+    height: 40px;
+    
+} 
+
+li img:hover{
+    box-shadow: #6d09f0 5px 7px 7px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+
+.correo:hover{
+   text-shadow: #db00fd 7px 10px 10px;
+}
 
 /***** LAPTOP *****/
 
@@ -233,7 +272,7 @@ img{
 
     /****MAIN*****/
     .contenedor-main{
-        height: 585px;
+        height: 565px;
     }
     
     .area-texto textarea{
@@ -290,8 +329,8 @@ img{
      }
 
      footer{
-        height: 50px;
-        background: rgba(255, 0, 0, 0.43);
+        height: 90px;
+        /* background: rgba(255, 0, 0, 0.43); */
         
     }
 }
@@ -302,7 +341,7 @@ img{
 
 @media (max-width:768px){
     .contenedor-header{
-        background: #b68fe8;
+        /* background: #b68fe8; */
     }
     
     .circulo-logo{
@@ -318,7 +357,7 @@ img{
     /****MAIN*****/
     .contenedor-main{
         margin-top: 15px;
-        height: 530px;
+        height: 515px;
     }
     
     .area-texto textarea{
@@ -386,7 +425,8 @@ img{
 
      footer{
         height: 50px;
-        background: rgba(255, 0, 0, 0.43);
+        /* background: rgba(255, 0, 0, 0.43); */
+        
         
     }
 }
@@ -425,4 +465,9 @@ img{
         height: 300px;
     }
  
+    .correo{
+        font-size: 17px;
+        font-weight: 200;
+        
+    }
 }
